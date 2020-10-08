@@ -11,7 +11,12 @@
         android:layout_height="wrap_content"
         android:text="Start"
         android:background="#0c3dec"/>
-
+    <Button
+        android:id="@+id/button_pause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:background="#ea420a"/>
     <Button
         android:id="@+id/button_stop"
         android:layout_width="match_parent"
