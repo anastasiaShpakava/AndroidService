@@ -1,9 +1,11 @@
 package com.company.androidservice;
 
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
+import android.os.PowerManager;
 import android.widget.Toast;
 
 public class PlayService extends Service {
