@@ -48,8 +48,7 @@ public class MainActivity extends AppCompatActivity {
         buttonPause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onPause();
-                onRestart();
+                PlayService.pause();
             }
         });
     }

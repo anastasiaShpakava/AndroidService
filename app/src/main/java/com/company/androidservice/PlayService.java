@@ -9,7 +9,7 @@ import android.os.PowerManager;
 import android.widget.Toast;
 
 public class PlayService extends Service {
-    private MediaPlayer mediaPlayer;
+    private static MediaPlayer mediaPlayer;
 
     public PlayService() {
     }
@@ -31,6 +31,8 @@ public class PlayService extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         Toast.makeText(this, "Service is started",Toast.LENGTH_SHORT ).show();
         mediaPlayer.start();
+        mediaPlayer.setLooping(true);
+       // mediaPlayer.seekTo();
         return super.onStartCommand(intent, flags, startId);
     }
 
@@ -39,5 +41,10 @@ public class PlayService extends Service {
         super.onDestroy();
         Toast.makeText(this, "Service stopped",Toast.LENGTH_SHORT).show();
         mediaPlayer.stop();
+    }
+
+    public static void pause() {
+        if (mediaPlayer.isPlaying())
+            mediaPlayer.pause();
     }
 }
