@@ -1,8 +1,9 @@
- Создать сервис для проигрывания файла музыки.
 
-На экране должны присутствовать три кнопки — play, pause и stop с соответствующим функционалом. 
+Create a service for playing a music file.
 
-Музыка должна проигрываться при выключении экрана, при рестарте приложения проигрывание должно начинаться с момента,
+There should be 3 buttons on the screen - play, pause and stop with the appropriate functionality.
 
-на котором оно было перезагружено.
+Music should be played when the screen is turned off, when the application is restarted, playback should start from the moment
+
+where it was rebooted.
 
